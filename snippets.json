@@ -1,0 +1,146 @@
+{
+    "and": {
+        "prefix": "and",
+        "description": "And",
+        "body": [
+            "!And",
+            "\t- ${1:condition}",
+            "\t- ${2:condition}"
+        ]
+    },
+    "base64": {
+        "prefix": "base64",
+        "description": "Base 64",
+        "body": [
+            "!Base64 ${1:value}"
+        ]
+    },
+    "cidr": {
+        "prefix": "cidr",
+        "description": "CIDR",
+        "body": [
+            "!Cidr",
+            "\t- ${1:ipBlock}",
+            "\t- ${2:count}",
+            "\t- ${3:cidrBits}"
+        ]
+    },
+    "equals": {
+        "prefix": "equals",
+        "description": "Equals",
+        "body": [
+            "!Equals",
+            "\t- ${1:value}",
+            "\t- ${2:value}",
+        ]
+    },
+    "findInMap": {
+        "prefix": "findinmap",
+        "description": "Find in Map",
+        "body": [
+            "!FindInMap",
+            "\t- ${1:mapName}",
+            "\t- ${2:topLevelKey}",
+            "\t- ${3:secondLevelKey}"
+        ]
+    },
+    "getAtt": {
+        "prefix": "getatt",
+        "description": "Get Attribute",
+        "body": [
+            "!GetAtt ${1:logicalNameOfResource}.${2:attributeName}"
+        ]
+    },
+    "getAzs": {
+        "prefix": "getazs",
+        "description": "Get Availability Zones",
+        "body": [
+            "!GetAZs ${1:region}"
+        ]
+    },
+    "if": {
+        "prefix": "if",
+        "description": "If",
+        "body": [
+            "!If",
+            "\t- ${1:condition}",
+            "\t- ${2:trueValue}",
+            "\t- ${3:falseValue}"
+        ]
+    },
+    "importValue": {
+        "prefix": "importvalue",
+        "description": "Import Value",
+        "body": [
+            "!ImportValue ${1:sharedValueToImport}"
+        ]
+    },
+    "join": {
+        "prefix": "join",
+        "description": "Join",
+        "body": [
+            "!Join",
+            "\t- '${1:delimiter}'",
+            "\t-\t- ${2:value}",
+            "\t\t- ${3:value}"
+        ]
+    },
+    "not": {
+        "prefix": "not",
+        "description": "Not",
+        "body": [
+            "!Not ${1:condition}"
+        ]
+    },
+    "or": {
+        "prefix": "or",
+        "description": "Or",
+        "body": [
+            "!Or",
+            "\t- ${1:condition}",
+            "\t- ${2:condition}"
+        ]
+    },
+    "ref": {
+        "prefix": "ref",
+        "description": "Reference",
+        "body": [
+            "!Ref ${1:logicalName}"
+        ]
+    },
+    "select": {
+        "prefix": "select",
+        "description": "Select",
+        "body": [
+            "!Select",
+            "\t- ${1:index}",
+            "\t- ${2:listOfObjects}"
+        ]
+    },
+    "split": {
+        "prefix": "split",
+        "description": "Split",
+        "body": [
+            "!Split",
+            "\t- ${1:delimiter}",
+            "\t- ${2:source}"
+        ]
+    },
+    "sub": {
+        "prefix": "sub",
+        "description": "Substitute",
+        "body": [
+            "!Sub '\\${${1:value}\\}'"
+        ]
+    },
+    "transform": {
+        "prefix": "transform",
+        "description": "Transform",
+        "body": [
+            "!Transform",
+            "\tName: ${1:macroName}",
+            "\tParameters:",
+            "\t\t${2:key}: ${3:value}"
+        ]
+    }
+}
