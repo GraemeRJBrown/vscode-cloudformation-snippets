@@ -1,0 +1,37 @@
+{
+	"name": "vscode-cloudformation-snippets",
+	"displayName": "Visual Studio Code CloudFormation Snippets",
+	"version": "0.0.1",
+	"description": "AWS CloudFormation Snippets for Visual Studio Code",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GraemeRJBrown/vscode-cloudformation-snippets.git"
+	},
+	"keywords": [
+		"CloudFormation",
+		"Snippets",
+		"VSCode"
+	],
+	"author": "GraemeRJBrown",
+	"publisher": "GraemeRJBrown",
+	"license": "ISC",
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "yaml",
+				"path": "./snippets.json"
+			}
+		]
+	},
+	"bugs": {
+		"url": "https://github.com/GraemeRJBrown/vscode-cloudformation-snippets/issues"
+	},
+	"homepage": "https://github.com/GraemeRJBrown/vscode-cloudformation-snippets#readme"
+}
