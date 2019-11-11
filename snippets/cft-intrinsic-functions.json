@@ -31,7 +31,7 @@
         "body": [
             "!Equals",
             "\t- ${1:value}",
-            "\t- ${2:value}",
+            "\t- ${2:value}"
         ]
     },
     "findInMap": {
@@ -80,7 +80,7 @@
         "description": "Join",
         "body": [
             "!Join",
-            "\t- '${1:delimiter}'",
+            "\t- \"${1:delimiter}\"",
             "\t-\t- ${2:value}",
             "\t\t- ${3:value}"
         ]
@@ -122,7 +122,7 @@
         "description": "Split",
         "body": [
             "!Split",
-            "\t- ${1:delimiter}",
+            "\t- \"${1:delimiter}\"",
             "\t- ${2:source}"
         ]
     },
@@ -130,7 +130,7 @@
         "prefix": "sub",
         "description": "Substitute",
         "body": [
-            "!Sub '\\${${1:value}\\}'"
+            "!Sub \"\\${${1:value}\\}\""
         ]
     },
     "transform": {
@@ -140,7 +140,7 @@
             "!Transform",
             "\tName: ${1:macroName}",
             "\tParameters:",
-            "\t\t${2:key}: ${3:value}"
+            "\t\t${2:Key}: ${3:value}"
         ]
     }
 }

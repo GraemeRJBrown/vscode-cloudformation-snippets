@@ -3,7 +3,6 @@
 	"displayName": "Visual Studio Code CloudFormation Snippets",
 	"version": "0.0.1",
 	"description": "AWS CloudFormation Snippets for Visual Studio Code",
-	"main": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/GraemeRJBrown/vscode-cloudformation-snippets.git"
@@ -26,7 +25,11 @@
 		"snippets": [
 			{
 				"language": "yaml",
-				"path": "./snippets.json"
+				"path": "./snippets/cft-core.json"
+            },
+            {
+				"language": "yaml",
+				"path": "./snippets/cft-intrinsic-functions.json"
 			}
 		]
 	},

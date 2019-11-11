@@ -1,0 +1,186 @@
+{
+    "awsTemplateFormatVersion": {
+        "prefix": "awstemplateformatversion",
+        "description": "AWS Template Format Version",
+        "body": [
+            "AWSTemplateFormatVersion: \"${1:2010-09-09}\""
+        ]
+    },
+    "cft": {
+        "prefix": "cft",
+        "description": "CloudFormation Template",
+        "body": [
+            "AWSTemplateFormatVersion: \"${1:2010-09-09}\"",
+            "",
+            "Description: \"${2:Value}\"",
+            "",
+            "Metadata:",
+            "",
+            "\t${3:Key}: ${4:value}",
+            "",
+            "Parameters:",
+            "",
+            "\t${5:Name}:",
+            "\t\tType: \"${6|String,Number,List,CommaDelimitedList|}\"",
+            "\t\tDescription: \"${7:Description}\"",
+            "\t\tDefault: ${8:value}",
+            "\t\tAllowedValues:",
+            "\t\t\t- ${9:value}",
+            "\t\t\t- ${10:value}",
+            "\t\tAllowedPattern: \"${11:value}\"",
+            "\t\tConstraintDescription: \"${12:Description}\"",
+            "\t\tMinLength: ${13:value}",
+            "\t\tMaxLength: ${14:value}",
+            "\t\tMinValue: ${15:value}",
+            "\t\tMaxValue: ${16:value}",
+            "\t\tNoEcho: ${17|true,false|}",
+            "",
+            "Mappings:",
+            "",
+            "\t${18:Key}: ${19:value}",
+            "",
+            "Conditions:",
+            "",
+            "\t${20:LogicalId}:",
+            "\t\t${21:intrinsicFunction}",
+            "",
+            "Resources:",
+            "",
+            "\t${22:LogicalId}:",
+            "\t\tType: \"AWS::${23:Service}::${24:Type}\"",
+            "\t\tProperties:",
+            "\t\t\t${25:Key}: ${26:value}",
+            "",
+            "Outputs:",
+            "",
+            "\t${27:LogicalId}:",
+            "\t\tDescription: \"${28:Description}\"",
+            "\t\tValue: ${29:value}",
+            "\t\tExport:",
+            "\t\t\tName: ${30:value}"
+        ]
+    },
+    "conditions": {
+        "prefix": "conditions",
+        "description": "Conditions",
+        "body": [
+            "Conditions:",
+            "",
+            "\t${1:LogicalId}:",
+            "\t\t${2:intrinsicFunction}"
+        ]
+    },
+    "description": {
+        "prefix": "description",
+        "description": "Description",
+        "body": [
+            "Description: \"${1:Value}\""
+        ]
+    },
+    "mappings": {
+        "prefix": "mappings",
+        "description": "Mappings",
+        "body": [
+            "Mappings:",
+            "",
+            "\t${1:Key}: ${2:value}"
+        ]
+    },
+    "metadata": {
+        "prefix": "metadata",
+        "description": "Metadata",
+        "body": [
+            "Metadata:",
+            "",
+            "\t${1:Key}: ${2:value}"
+        ]
+    },
+    "output": {
+        "prefix": "output",
+        "description": "Output",
+        "body": [
+            "${1:LogicalId}:",
+            "\tDescription: \"${2:Description}\"",
+            "\tValue: ${3:value}",
+            "\tExport:",
+            "\t\tName: ${4:value}"
+        ]
+    },
+    "outputs": {
+        "prefix": "outputs",
+        "description": "Outputs",
+        "body": [
+            "Outputs:",
+            "",
+            "\t${1:LogicalId}:",
+            "\t\tDescription: \"${2:Description}\"",
+            "\t\tValue: ${3:value}",
+            "\t\tExport:",
+            "\t\t\tName: ${4:value}"
+        ]
+    },
+    "parameter": {
+        "prefix": "parameter",
+        "description": "Parameter",
+        "body": [
+            "${1:Name}:",
+            "\tType: \"${2|String,Number,List,CommaDelimitedList|}\"",
+            "\tDescription: \"${3:Description}\"",
+            "\tDefault: ${4:value}",
+            "\tAllowedValues:",
+            "\t\t- ${5:value}",
+            "\t\t- ${6:value}",
+            "\tAllowedPattern: \"${7:value}\"",
+            "\tConstraintDescription: \"${8:Description}\"",
+            "\tMinLength: ${9:value}",
+            "\tMaxLength: ${10:value}",
+            "\tMinValue: ${11:value}",
+            "\tMaxValue: ${12:value}",
+            "\tNoEcho: ${13|true,false|}"
+        ]
+    },
+    "parameters": {
+        "prefix": "parameters",
+        "description": "Parameters",
+        "body": [
+            "Parameters:",
+            "",
+            "\t${1:Name}:",
+            "\t\tType: \"${2|String,Number,List,CommaDelimitedList|}\"",
+            "\t\tDescription: \"${3:Description}\"",
+            "\t\tDefault: ${4:value}",
+            "\t\tAllowedValues:",
+            "\t\t\t- ${5:value}",
+            "\t\t\t- ${6:value}",
+            "\t\tAllowedPattern: \"${7:value}\"",
+            "\t\tConstraintDescription: \"${8:Description}\"",
+            "\t\tMinLength: ${9:value}",
+            "\t\tMaxLength: ${10:value}",
+            "\t\tMinValue: ${11:value}",
+            "\t\tMaxValue: ${12:value}",
+            "\t\tNoEcho: ${13|true,false|}"
+        ]
+    },
+    "resource": {
+        "prefix": "resource",
+        "description": "Resource",
+        "body": [
+            "${1:LogicalId}:",
+            "\tType: \"AWS::${2:Service}::${3:Type}\"",
+            "\tProperties:",
+            "\t\t${4:Key}: ${5:value}"
+        ]
+    },
+    "resources": {
+        "prefix": "resources",
+        "description": "Resources",
+        "body": [
+            "Resources:",
+            "",
+            "\t${1:LogicalId}:",
+            "\t\tType: \"AWS::${2:Service}::${3:Type}\"",
+            "\t\tProperties:",
+            "\t\t\t${4:Key}: ${5:value}"
+        ]
+    }
+}
