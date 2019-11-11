@@ -1,7 +1,7 @@
 {
 	"name": "vscode-cloudformation-snippets",
 	"displayName": "Visual Studio Code CloudFormation Snippets",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "AWS CloudFormation Snippets for Visual Studio Code",
 	"repository": {
 		"type": "git",
